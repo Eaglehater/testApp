@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: testapp
-        image: lighteagle/testapp:latest
+        image: gcr.io/PROJECT_ID/IMAGE:TAG
         env:
         - name: redisHost
           value: redishost
