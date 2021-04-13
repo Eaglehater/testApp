@@ -9,7 +9,7 @@
 # 3. Change the values for the GKE_ZONE, GKE_CLUSTER, IMAGE, and DEPLOYMENT_NAME environment variables (below).
 #
 # For more support on how to run the workflow, please visit https://github.com/google-github-actions/setup-gcloud/tree/master/example-workflows/gke
-#
+
 name: GKE
 
 on:
@@ -19,8 +19,13 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
+<<<<<<< HEAD
   GKE_CLUSTER: cluster-2    # TODO: update to cluster name
   GKE_ZONE: europe-west1   # TODO: update to cluster zone
+=======
+  GKE_CLUSTER: cluster-3    # TODO: update to cluster name
+  GKE_ZONE: europe-central2   # TODO: update to cluster zone
+>>>>>>> 10414c28f7e24094f3e705152f2b6935a713f60e
   DEPLOYMENT_NAME: testapp # TODO: update to deployment name
   IMAGE: static-site
 
